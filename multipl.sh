@@ -18,10 +18,13 @@ sudo apt update && sudo apt upgrade -y
 
 echo "Downloading..."
 wget https://cdn.app.multiple.cc/client/linux/x64/multipleforlinux.tar -O multipleforlinux.tar
+
+echo "Extracting files..."
 tar -xvf multipleforlinux.tar
 
 cd multipleforlinux
 
+echo "Granting permissions..."
 chmod +x ./multiple-cli
 chmod +x ./multiple-node
 
